@@ -59,11 +59,5 @@ const credentials = JSON.parse(
         "Content-Disposition": 'inline; filename="speech.mp3"',
       },
     });
-  } catch (error) {
-    console.error("TTS Error:", error);
-    return NextResponse.json(
-      { error: "Failed to convert text to speech" },
-      { status: 500 }
-    );
-  }
+  } 
 }
