@@ -10,6 +10,7 @@ import { useTranslation } from "@/hooks/use-translation"
 
 export default function SubjectGrid() {
   const { t } = useTranslation()
+  
 
   const subjects = [
     {

@@ -19,7 +19,7 @@ export default function FeaturedTopics() {
       description: "Explore the motion of a pendulum and understand the principles of simple harmonic motion",
       difficulty: "Intermediate",
       image: "/placeholder.svg?height=150&width=300",
-      path: "/visualearn/physics/mechanics/pendulum",
+      path: "/visualearn/physics/motion/projectile-motion",
     },
     {
       id: "dna",

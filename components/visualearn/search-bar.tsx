@@ -27,13 +27,13 @@ export default function SearchBar() {
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <Input
           type="text"
-          placeholder={t("visualearn.search.placeholder") || "Search for topics, concepts, or subjects..."}
+          placeholder={t("Search for topics, concepts, or subjects...") || "visualearn.search.placeholder"}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="pl-10 pr-20"
         />
         <Button type="submit" size="sm" className="absolute right-1 top-1/2 -translate-y-1/2 h-8">
-          {t("visualearn.search.button") || "Search"}
+          {t("Search") || "Search"}
         </Button>
       </div>
     </form>

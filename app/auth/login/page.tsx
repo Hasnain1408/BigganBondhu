@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Login - Biplobi-Biggan-Sikhkha",
+  title: "Login - BigganBondhu",
   description: "Login to your account",
 }
 

@@ -67,34 +67,34 @@ export const en = {
   },
 
   // Testimonials Section
-  testimonials: {
-    title: "What Our Users Say",
-    subtitle: "Hear from students and educators who have transformed their learning experience",
-    1: {
-      content:
-        "This platform has completely changed how I understand physics. The visualizations make complex concepts so much clearer!",
-      author: {
-        name: "Sarah Johnson",
-        role: "Physics Student",
-      },
-    },
-    2: {
-      content:
-        "As a teacher, I've found this to be an invaluable resource. My students are more engaged and their test scores have improved significantly.",
-      author: {
-        name: "Dr. Michael Chen",
-        role: "High School Science Teacher",
-      },
-    },
-    3: {
-      content:
-        "The community discussions have helped me connect with other learners and experts. I've learned so much from the exchanges.",
-      author: {
-        name: "Rahul Patel",
-        role: "Engineering Student",
-      },
-    },
-  },
+  // testimonials: {
+  //   title: "What Our Users Say",
+  //   subtitle: "Hear from students and educators who have transformed their learning experience",
+  //   1: {
+  //     content:
+  //       "This platform has completely changed how I understand physics. The visualizations make complex concepts so much clearer!",
+  //     author: {
+  //       name: "Sarah Johnson",
+  //       role: "Physics Student",
+  //     },
+  //   },
+  //   2: {
+  //     content:
+  //       "As a teacher, I've found this to be an invaluable resource. My students are more engaged and their test scores have improved significantly.",
+  //     author: {
+  //       name: "Dr. Michael Chen",
+  //       role: "High School Science Teacher",
+  //     },
+  //   },
+  //   3: {
+  //     content:
+  //       "The community discussions have helped me connect with other learners and experts. I've learned so much from the exchanges.",
+  //     author: {
+  //       name: "Rahul Patel",
+  //       role: "Engineering Student",
+  //     },
+  //   },
+  // },
 
   // Footer
   footer: {

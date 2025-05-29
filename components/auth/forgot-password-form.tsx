@@ -27,6 +27,7 @@ export default function ForgotPasswordForm() {
       const { error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: `${window.location.origin}/auth/reset-password`,
       })
+      // The redirectTo option specifies the URL (/auth/reset-password) where users will be redirected after clicking the reset link in their email.
 
       if (error) throw error
 

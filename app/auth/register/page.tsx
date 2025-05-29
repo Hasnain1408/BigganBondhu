@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Register - Biplobi-Biggan-Sikhkha",
+  title: "Register - BigganBondhu",
   description: "Create a new account",
 }
 

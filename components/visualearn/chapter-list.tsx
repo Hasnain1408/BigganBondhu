@@ -25,7 +25,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Introduction to Physics",
               description: "Fundamental concepts and principles of physics",
               topics: 5,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/introduction to physics.jpg?height=120&width=240",
               progress: 0,
             },
             {
@@ -33,7 +33,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Vectors",
               description: "Study of vector quantities in physics and their applications",
               topics: 4,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/vector.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -41,7 +41,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Motion",
               description: "Study of movement, velocity, acceleration, and kinematic equations",
               topics: 6,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/motion.jpg?height=120&width=240",
               progress: 75,
             },
             {
@@ -49,7 +49,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Force",
               description: "Understanding different types of forces and Newton's laws",
               topics: 5,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/force.avif?height=120&width=240",
               progress: 0,
             },
             {
@@ -57,7 +57,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Mechanics",
               description: "Study of motion, forces, energy, and the fundamental principles of classical mechanics",
               topics: 8,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/mechanics.jpg?height=120&width=240",
               progress: 75,
             },
             {
@@ -65,7 +65,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Energy",
               description: "Concepts of work, energy, power, and conservation principles",
               topics: 5,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/energy.webp?height=120&width=240",
               progress: 0,
             },
             {
@@ -73,7 +73,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Gravity",
               description: "Study of gravitational forces, orbital mechanics, and universal gravitation",
               topics: 4,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/gravity.webp?height=120&width=240",
               progress: 0,
             },
             {
@@ -81,7 +81,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Waves and Oscillations",
               description: "Understand wave phenomena, sound, light, and periodic motion",
               topics: 7,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/waves.webp?height=120&width=240",
               progress: 0,
             },
             {
@@ -89,7 +89,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Ideal Gas",
               description: "Study of gas laws, kinetic theory, and thermodynamic principles",
               topics: 4,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/ideal gas.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -97,7 +97,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Electricity",
               description: "Discover electric charges, currents, and electrical phenomena",
               topics: 7,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/electricity.jpeg?height=120&width=240",
               progress: 10,
             },
             {
@@ -105,7 +105,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Magnetism",
               description: "Study of magnetic fields, forces, and electromagnetic induction",
               topics: 5,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/magnetics.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -113,7 +113,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Relativity",
               description: "Einstein's theories of special and general relativity",
               topics: 6,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/relativity.jpg?height=120&width=240",
               progress: 0,
             },
             {
@@ -121,7 +121,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Quantum Physics",
               description: "Principles of quantum mechanics and wave-particle duality",
               topics: 7,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/quantum.jpg?height=120&width=240",
               progress: 0,
             },
             {
@@ -129,7 +129,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Modern Physics",
               description: "Explore relativity, quantum mechanics, and the physics of the 20th century",
               topics: 8,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/modern.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -137,7 +137,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Nuclear Physics",
               description: "Study of atomic nuclei, radioactivity, and nuclear reactions",
               topics: 6,
-              image: "/placeholder.svg?height=120&width=240",
+              image: "/nuclear.png?height=120&width=240",
               progress: 0,
             }
           

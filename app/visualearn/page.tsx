@@ -36,6 +36,8 @@ export default function VisualEarnPage() {
         <h2 className="text-2xl font-bold mb-6">Browse by Subject</h2>
         <SubjectGrid />
       </div>
+
+
     </div>
   )
 }

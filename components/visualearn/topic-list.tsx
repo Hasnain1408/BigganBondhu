@@ -84,7 +84,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               description: "Study of motion without considering its causes",
               duration: "25 min",
               difficulty: "Beginner",
-              completed: true,
+              completed: false,
             },
             {
               id: "projectile-motion",
@@ -92,7 +92,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               description: "Motion of objects projected into the air under gravity",
               duration: "30 min",
               difficulty: "Intermediate",
-              completed: false,
+              completed: true,
             },
             {
               id: "relative-motion",
@@ -1101,7 +1101,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
                     {topic.completed ? (
                       <>
                         <Play className="mr-2 h-4 w-4" />
-                        Review
+                        Completed
                       </>
                     ) : (
                       <>
