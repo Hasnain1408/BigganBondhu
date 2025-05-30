@@ -25,7 +25,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Introduction to Physics",
               description: "Fundamental concepts and principles of physics",
               topics: 5,
-              image: "/introduction to physics.jpg?height=120&width=240",
+              image: "/physics/introduction to physics.jpg?height=120&width=240",
               progress: 0,
             },
             {
@@ -33,7 +33,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Vectors",
               description: "Study of vector quantities in physics and their applications",
               topics: 4,
-              image: "/vector.jpeg?height=120&width=240",
+              image: "/physics/vector.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -41,7 +41,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Motion",
               description: "Study of movement, velocity, acceleration, and kinematic equations",
               topics: 6,
-              image: "/motion.jpg?height=120&width=240",
+              image: "/physics/motion.jpg?height=120&width=240",
               progress: 75,
             },
             {
@@ -49,7 +49,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Force",
               description: "Understanding different types of forces and Newton's laws",
               topics: 5,
-              image: "/force.avif?height=120&width=240",
+              image: "/physics/force.avif?height=120&width=240",
               progress: 0,
             },
             {
@@ -57,7 +57,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Mechanics",
               description: "Study of motion, forces, energy, and the fundamental principles of classical mechanics",
               topics: 8,
-              image: "/mechanics.jpg?height=120&width=240",
+              image: "/physics/mechanics.jpg?height=120&width=240",
               progress: 75,
             },
             {
@@ -65,7 +65,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Energy",
               description: "Concepts of work, energy, power, and conservation principles",
               topics: 5,
-              image: "/energy.webp?height=120&width=240",
+              image: "/physics/energy.webp?height=120&width=240",
               progress: 0,
             },
             {
@@ -73,7 +73,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Gravity",
               description: "Study of gravitational forces, orbital mechanics, and universal gravitation",
               topics: 4,
-              image: "/gravity.webp?height=120&width=240",
+              image: "/physics/gravity.webp?height=120&width=240",
               progress: 0,
             },
             {
@@ -81,7 +81,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Waves and Oscillations",
               description: "Understand wave phenomena, sound, light, and periodic motion",
               topics: 7,
-              image: "/waves.webp?height=120&width=240",
+              image: "/physics/waves.webp?height=120&width=240",
               progress: 0,
             },
             {
@@ -89,7 +89,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Ideal Gas",
               description: "Study of gas laws, kinetic theory, and thermodynamic principles",
               topics: 4,
-              image: "/ideal gas.jpeg?height=120&width=240",
+              image: "/physics/ideal gas.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -97,7 +97,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Electricity",
               description: "Discover electric charges, currents, and electrical phenomena",
               topics: 7,
-              image: "/electricity.jpeg?height=120&width=240",
+              image: "/physics/electricity.jpeg?height=120&width=240",
               progress: 10,
             },
             {
@@ -105,7 +105,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Magnetism",
               description: "Study of magnetic fields, forces, and electromagnetic induction",
               topics: 5,
-              image: "/magnetics.jpeg?height=120&width=240",
+              image: "/physics/magnetics.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -113,7 +113,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Relativity",
               description: "Einstein's theories of special and general relativity",
               topics: 6,
-              image: "/relativity.jpg?height=120&width=240",
+              image: "/physics/relativity.jpg?height=120&width=240",
               progress: 0,
             },
             {
@@ -121,7 +121,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Quantum Physics",
               description: "Principles of quantum mechanics and wave-particle duality",
               topics: 7,
-              image: "/quantum.jpg?height=120&width=240",
+              image: "/physics/quantum.jpg?height=120&width=240",
               progress: 0,
             },
             {
@@ -129,7 +129,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Modern Physics",
               description: "Explore relativity, quantum mechanics, and the physics of the 20th century",
               topics: 8,
-              image: "/modern.jpeg?height=120&width=240",
+              image: "/physics/modern.jpeg?height=120&width=240",
               progress: 0,
             },
             {
@@ -137,7 +137,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               title: "Nuclear Physics",
               description: "Study of atomic nuclei, radioactivity, and nuclear reactions",
               topics: 6,
-              image: "/nuclear.png?height=120&width=240",
+              image: "/physics/nuclear.png?height=120&width=240",
               progress: 0,
             }
           
@@ -149,7 +149,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Introduction to Chemistry",
             description: "Fundamental concepts, matter, and the scientific method in chemistry",
             topics: 5,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Introduction to Chemistry.jpg?height=120&width=240",
             progress: 0,
           },
           {
@@ -157,7 +157,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Atomic Structure",
             description: "Study of atoms, subatomic particles, and electron configurations",
             topics: 6,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Atomic Structure.jpg?height=120&width=240",
             progress: 0,
           },
           {
@@ -165,7 +165,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Chemical Bonding",
             description: "Types of bonds (ionic, covalent, metallic) and molecular structures",
             topics: 7,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Chemical Bonding.jpg?height=120&width=240",
             progress: 0,
           },
           {
@@ -173,7 +173,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Chemical Reactions",
             description: "Types of reactions, balancing equations, and stoichiometry",
             topics: 8,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Chemical Reactions.jpg?height=120&width=240",
             progress: 0,
           },
           {
@@ -181,7 +181,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Periodic Table",
             description: "Elements, trends, and properties organized in the periodic table",
             topics: 6,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Periodic Table.webp?height=120&width=240",
             progress: 0,
           },
           {
@@ -189,7 +189,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Gases",
             description: "Gas laws, kinetic molecular theory, and behavior of gases",
             topics: 5,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Gases.jpg?height=120&width=240",
             progress: 0,
           },
           {
@@ -197,7 +197,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Organic Chemistry",
             description: "Study of carbon compounds, hydrocarbons, and functional groups",
             topics: 9,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Organic Chemistry.jpg?height=120&width=240",
             progress: 0,
           },
           {
@@ -205,7 +205,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Acids and Bases",
             description: "pH, neutralization, buffers, and acid-base theories",
             topics: 6,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Acids and Bases.webp?height=120&width=240",
             progress: 0,
           },
           {
@@ -213,7 +213,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Chemical Energy",
             description: "Thermochemistry, enthalpy, entropy, and Gibbs free energy",
             topics: 6,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Chemical Energy.avif?height=120&width=240",
             progress: 0,
           },
           {
@@ -221,7 +221,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Industrial Chemistry",
             description: "Chemical processes, manufacturing, and applications in industry",
             topics: 7,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/chemistry/Industrial Chemistry.jpg?height=120&width=240",
             progress: 0,
           }
         ]
@@ -232,7 +232,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Cell Biology",
             description: "Explore the structure and function of cells, the basic units of life",
             topics: 7,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/biology/Cell Biology.jpeg?height=120&width=240",
             progress: 80,
           },
           {
@@ -240,7 +240,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Genetics",
             description: "Understand inheritance, DNA, and the molecular basis of heredity",
             topics: 8,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/biology/Genetics.jpeg?height=120&width=240",
             progress: 50,
           },
           {
@@ -248,7 +248,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Human Physiology",
             description: "Learn about the functions and systems of the human body",
             topics: 9,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/biology/Human Physiology.jpg?height=120&width=240",
             progress: 20,
           },
           {
@@ -256,7 +256,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Ecology",
             description: "Study the relationships between organisms and their environment",
             topics: 6,
-            image: "/placeholder.svg?height=120&width=240",
+            image: "/biology/Ecology.jpg?height=120&width=240",
             progress: 0,
           },
         ]
@@ -267,7 +267,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Solar System",
             description: "Planets, moons, and small bodies in our cosmic neighborhood",
             topics: 6,
-            image: "/astronomy/solar-system.svg?height=120&width=240",
+            image: "/astronomy/Solar System.jpg?height=120&width=240",
             progress: 25,
           },
           {
@@ -275,7 +275,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Stars & Stellar Evolution",
             description: "Life cycles of stars from birth to supernovae",
             topics: 5,
-            image: "/astronomy/stars.svg?height=120&width=240",
+            image: "/astronomy/Stars & Stellar Evolution.jpg?height=120&width=240",
             progress: 10,
           },
           {
@@ -283,7 +283,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Galaxies & Cosmology",
             description: "Structure of galaxies and the large-scale universe",
             topics: 7,
-            image: "/astronomy/galaxy.svg?height=120&width=240",
+            image: "/astronomy/Galaxies & Cosmology.webp?height=120&width=240",
             progress: 0,
           },
           {
@@ -291,7 +291,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Telescopes & Observation",
             description: "Tools and techniques for studying the cosmos",
             topics: 4,
-            image: "/astronomy/telescope.svg?height=120&width=240",
+            image: "/astronomy/Telescopes & Observation.jpeg?height=120&width=240",
             progress: 5,
           },
           {
@@ -299,7 +299,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             title: "Space Exploration",
             description: "Missions, technology, and future of space travel",
             topics: 5,
-            image: "/astronomy/rocket.svg?height=120&width=240",
+            image: "/astronomy/Space Exploration.jpeg?height=120&width=240",
             progress: 15,
           }
         ];
