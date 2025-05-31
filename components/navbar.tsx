@@ -8,7 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useTranslation } from "@/hooks/use-translation"
-import { LanguageToggle } from "./language-toggle"
+import { LanguageToggleDropdown } from "./language-toggle"
 import { ThemeToggle } from "./theme-toggle"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { useAuth } from "@/hooks/use-auth"
@@ -95,7 +95,7 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center gap-2">
-            <LanguageToggle />
+            <LanguageToggleDropdown />
             <ThemeToggle />
           </div>
           {isAuthenticated && user ? (
@@ -141,7 +141,7 @@ export default function Navbar() {
                   </Link>
                 ))}
                 <div className="flex items-center gap-2 mt-4">
-                  <LanguageToggle />
+                  <LanguageToggleDropdown />
                   <ThemeToggle />
                 </div>
               </nav>
