@@ -1,9 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import NewtonsLawsIndex from "./Newtons-Law/NewtonsLawsIndex"
-import FrictionIndex from "./Friction/FrictionIndex"
-import SpringForceIndex from "./Spring Force/SpringForceIndex"
+import NewtonsLawsIndex from "./newtons-law/NewtonsLawsIndex"
+import FrictionIndex from "./friction/FrictionIndex"
+import SpringForceIndex from "./spring force/SpringForceIndex"
 
 interface ForceContentProps {
   topic: {

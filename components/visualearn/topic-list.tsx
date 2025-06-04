@@ -298,6 +298,22 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               difficulty: "Intermediate",
               completed: false,
             },
+             {
+              id: "electric-force",
+              title: "Electric Force",
+              description: "Voltage, potential difference, and equipotential surfaces",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+             {
+              id: "electric-capacitance",
+              title: "Electric Capacitance",
+              description: "Voltage, potential difference, and equipotential surfaces",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
           ];
 
         case "magnetics":
