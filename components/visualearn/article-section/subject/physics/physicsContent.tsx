@@ -4,6 +4,8 @@ import MotionContent from "./motion/motionContent"
 import ForceContent from "./force/forceContent"
 import IntroductionContent from "./introduction/IntroductionContent"
 import ElectricityContent from "./electricity/electricityContent"
+import WaveContent from "./waves/waveContent"
+import VectorContent from "./vector/vectorContent"
 
 interface PhysicsContentProps {
   chapter: string
@@ -23,6 +25,9 @@ export default function PhysicsContent({ chapter, topic }: PhysicsContentProps) 
         {chapter === "introduction" ? (
             <IntroductionContent topic={topic} />
         ) : null}
+        {chapter === "vector" ? (
+            <VectorContent topic={topic} />
+        ) : null}
         {chapter === "motion" ? (
             <MotionContent topic={topic} />
         ) : null} 
@@ -31,7 +36,11 @@ export default function PhysicsContent({ chapter, topic }: PhysicsContentProps) 
         ) : null} 
         {chapter === "electricity" ? (
             <ElectricityContent topic={topic} />
-        ) : null}               
+        ) : null}    
+        {chapter === "waves" ? (
+            <WaveContent topic={topic} />
+        ) : null}   
+
     </div>
   )
 }
