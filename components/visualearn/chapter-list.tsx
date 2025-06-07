@@ -21,7 +21,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
         return [
           
             {
-              id: "introduction to physics",
+              id: "introduction-to-physics",
               title: "Introduction to Physics",
               description: "Fundamental concepts and principles of physics",
               topics: 5,
@@ -85,7 +85,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
               progress: 0,
             },
             {
-              id: "ideal gas",
+              id: "ideal-gas",
               title: "Ideal Gas",
               description: "Study of gas laws, kinetic theory, and thermodynamic principles",
               topics: 4,
@@ -226,40 +226,72 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
           }
         ]
       case "biology":
-        return [
-          {
-            id: "cell",
-            title: "Cell Biology",
-            description: "Explore the structure and function of cells, the basic units of life",
-            topics: 7,
-            image: "/biology/Cell Biology.jpeg?height=120&width=240",
-            progress: 80,
-          },
-          {
-            id: "genetics",
-            title: "Genetics",
-            description: "Understand inheritance, DNA, and the molecular basis of heredity",
-            topics: 8,
-            image: "/biology/Genetics.jpeg?height=120&width=240",
-            progress: 50,
-          },
-          {
-            id: "physiology",
-            title: "Human Physiology",
-            description: "Learn about the functions and systems of the human body",
-            topics: 9,
-            image: "/biology/Human Physiology.jpg?height=120&width=240",
-            progress: 20,
-          },
-          {
-            id: "ecology",
-            title: "Ecology",
-            description: "Study the relationships between organisms and their environment",
-            topics: 6,
-            image: "/biology/Ecology.jpg?height=120&width=240",
-            progress: 0,
-          },
-        ]
+  return [
+    {
+      id: "cell-biology",
+      title: "Cell Biology",
+      description: "Explore the structure and function of cells, the basic units of life",
+      topics: 7,
+      image: "/biology/Cell Biology.jpeg?height=120&width=240",
+      progress: 80,
+    },
+    {
+      id: "genetics",
+      title: "Genetics",
+      description: "Understand inheritance, DNA, and the molecular basis of heredity",
+      topics: 8,
+      image: "/biology/Genetics.jpeg?height=120&width=240",
+      progress: 50,
+    },
+    {
+      id: "human-physiology",
+      title: "Human Physiology",
+      description: "Learn about the functions and systems of the human body",
+      topics: 9,
+      image: "/biology/Human Physiology.jpg?height=120&width=240",
+      progress: 20,
+    },
+    {
+      id: "ecology",
+      title: "Ecology",
+      description: "Study the relationships between organisms and their environment",
+      topics: 6,
+      image: "/biology/Ecology.jpg?height=120&width=240",
+      progress: 0,
+    },
+    {
+      id: "evolution",
+      title: "Evolution",
+      description: "Discover the mechanisms of natural selection and speciation",
+      topics: 5,
+      image: "/biology/Evolution.jpg?height=120&width=240",
+      progress: 10,
+    },
+    {
+      id: "microbiology",
+      title: "Microbiology",
+      description: "Explore microorganisms like bacteria, viruses, and fungi",
+      topics: 7,
+      image: "/biology/Microbiology.jpg?height=120&width=240",
+      progress: 0,
+    },
+    {
+      id: "plant-biology",
+      title: "Plant Biology",
+      description: "Study photosynthesis, plant structures, and reproduction",
+      topics: 6,
+      image: "/biology/Plant Biology.jpeg?height=120&width=240",
+      progress: 0,
+    },
+    {
+      id: "biochemistry",
+      title: "Biochemistry",
+      description: "Examine biomolecules, enzymes, and metabolic pathways",
+      topics: 8,
+      image: "/biology/Biochemistry.jpg?height=120&width=240",
+      progress: 30,
+    }
+  ];
       case "astronomy":
         return [
           {

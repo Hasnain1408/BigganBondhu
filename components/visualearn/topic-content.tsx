@@ -2,7 +2,7 @@
 
 import PhysicsContent from "./article-section/subject/physics/physicsContent"
 // import ChemistryContent from "./article-section/subject/chemistry/chemistryContent"
-// import BiologyContent from "./article-section/subject/biology/biologyContent"
+import BiologyContent from "./article-section/subject/biology/biologyContent"
 // import MathContent from "./article-section/subject/math/mathContent"
 // import AstronomyContent from "./article-section/subject/astronomy/astronomyContent"
 
@@ -25,13 +25,14 @@ export default function TopicContent({ subject, chapter, topic }: TopicContentPr
       {subject === "physics" ? (
         <PhysicsContent chapter={chapter} topic={topic} />
       ) : null}
+       {subject === "biology" ? (
+        <BiologyContent chapter={chapter} topic={topic} />
+      ) : null}
       {/* {subject === "chemistry" ? (
         <ChemistryContent chapter={chapter} topic={topic} />
       ) : null}
 
-      {subject === "biology" ? (
-        <BiologyContent chapter={chapter} topic={topic} />
-      ) : null}
+     
 
       {subject === "math" ? (
         <MathContent chapter={chapter} topic={topic} />

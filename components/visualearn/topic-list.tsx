@@ -20,7 +20,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
   const getTopics = (subjectId: string, chapterId: string) => {
     if (subjectId === "physics") {
       switch (chapterId) {
-        case "introduction to physics":
+        case "introduction-to-physics":
           return [
             {
               id: "what-is-physics",
@@ -244,7 +244,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
             },
           ];
 
-        case "ideal gas":
+        case "ideal-gas":
           return [
             {
               id: "gas-laws",
@@ -456,6 +456,237 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
             },
           ];
 
+        default:
+          return [];
+      }
+    }
+
+    if (subjectId === "biology") {
+      switch (chapterId) {
+        case "cell-biology":
+          return [
+            {
+              id: "cell-structure",
+              title: "Cell Structure",
+              description: "Prokaryotic vs. eukaryotic cells, organelles, and their functions",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "cell-membrane",
+              title: "Cell Membrane & Transport",
+              description: "Diffusion, osmosis, active/passive transport",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "cell-division",
+              title: "Cell Division",
+              description: "Mitosis, meiosis, and the cell cycle",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
+    
+        case "genetics":
+          return [
+            {
+              id: "dna-structure",
+              title: "DNA Structure & Replication",
+              description: "Double helix, nucleotides, semi-conservative replication",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "mendelian-genetics",
+              title: "Mendelian Genetics",
+              description: "Punnett squares, dominant/recessive traits",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "gene-expression",
+              title: "Gene Expression",
+              description: "Transcription, translation, and regulation",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
+        case "evolution":
+          return [
+            {
+              id: "natural-selection",
+              title: "Natural Selection",
+              description: "Darwin’s theory, adaptations, and fitness",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "evidence-of-evolution",
+              title: "Evidence of Evolution",
+              description: "Fossils, homologous structures, molecular biology",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "speciation",
+              title: "Speciation",
+              description: "Allopatric vs. sympatric speciation",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
+        case "ecology":
+          return [
+            {
+              id: "ecosystems",
+              title: "Ecosystems",
+              description: "Biotic/abiotic factors, energy flow (food chains/webs)",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "biogeochemical-cycles",
+              title: "Biogeochemical Cycles",
+              description: "Carbon, nitrogen, and water cycles",
+              duration: "25 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "conservation",
+              title: "Conservation Biology",
+              description: "Biodiversity threats and sustainable practices",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
+        case "human-physiology":
+          return [
+            {
+              id: "digestive-system",
+              title: "Digestive System",
+              description: "Organs, enzymes, and nutrient absorption",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "circulatory-system",
+              title: "Circulatory System",
+              description: "Heart, blood vessels, and gas exchange",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "nervous-system",
+              title: "Nervous System",
+              description: "Neurons, synapses, and brain function",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
+        case "microbiology":
+          return [
+            {
+              id: "microorganisms",
+              title: "Microorganisms",
+              description: "Bacteria, viruses, fungi, and protists",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "immune-system",
+              title: "Immune System",
+              description: "Innate vs. adaptive immunity, vaccines",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "biotechnology",
+              title: "Biotechnology",
+              description: "PCR, CRISPR, and genetic engineering",
+              duration: "45 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
+        case "plant-biology":
+          return [
+            {
+              id: "photosynthesis",
+              title: "Photosynthesis",
+              description: "Light-dependent/independent reactions",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: true,
+            },
+            {
+              id: "plant-structure",
+              title: "Plant Structure",
+              description: "Roots, stems, leaves, and vascular tissues",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "plant-reproduction",
+              title: "Plant Reproduction",
+              description: "Pollination, seeds, and alternation of generations",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
+        case "biochemistry":
+          return [
+            {
+              id: "biomolecules",
+              title: "Biomolecules",
+              description: "Carbohydrates, lipids, proteins, nucleic acids",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "enzymes",
+              title: "Enzymes",
+              description: "Catalysis, activation energy, and inhibition",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "metabolism",
+              title: "Metabolism",
+              description: "Cellular respiration (glycolysis, Krebs cycle, ETC)",
+              duration: "45 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+    
         default:
           return [];
       }
@@ -1037,10 +1268,9 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
 
             default:
               return [];
-          }
-
-          
+          }        
 }
+
 
     // Default fallback for demo purposes
     return [
