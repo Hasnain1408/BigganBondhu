@@ -1,1 +1,5 @@
 generate files for electric force in this format. topic content must be lengthy; simulation must be animated, interesting and interactive ; number of quiz must 5.
+
+
+
+simulation must be animated, interesting and interactive. make it aesthetic and new features

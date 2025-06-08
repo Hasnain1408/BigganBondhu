@@ -298,7 +298,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               difficulty: "Intermediate",
               completed: false,
             },
-             {
+            {
               id: "electric-force",
               title: "Electric Force",
               description: "Voltage, potential difference, and equipotential surfaces",
@@ -306,7 +306,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               difficulty: "Intermediate",
               completed: false,
             },
-             {
+            {
               id: "electric-capacitance",
               title: "Electric Capacitance",
               description: "Voltage, potential difference, and equipotential surfaces",
@@ -461,6 +461,294 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
       }
     }
 
+    if (subjectId === "chemistry") {
+      switch (chapterId) {
+        case "introduction-to-chemistry":
+          return [
+            {
+              id: "matter-classification",
+              title: "Classification of Matter",
+              description: "Elements, compounds, mixtures and their properties",
+              duration: "20 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "physical-chemical-changes",
+              title: "Physical vs Chemical Changes",
+              description: "Understanding differences between physical and chemical transformations",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "scientific-measurement",
+              title: "Scientific Measurement",
+              description: "Units, significant figures, and dimensional analysis",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
+
+        case "atomic-structure":
+          return [
+            {
+              id: "atomic-models",
+              title: "Atomic Models",
+              description: "Evolution from Dalton to quantum mechanical model",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "subatomic-particles",
+              title: "Subatomic Particles",
+              description: "Protons, neutrons, electrons and their properties",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "electron-configuration",
+              title: "Electron Configuration",
+              description: "Arrangement of electrons in atoms and orbitals",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+
+        case "bonding":
+          return [
+            {
+              id: "ionic-bonding",
+              title: "Ionic Bonding",
+              description: "Electron transfer and ionic compound formation",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "covalent-bonding",
+              title: "Covalent Bonding",
+              description: "Electron sharing and molecular compounds",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "lewis-structures",
+              title: "Lewis Structures",
+              description: "Drawing electron dot diagrams for molecules",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
+
+        case "reaction":
+          return [
+            {
+              id: "reaction-types",
+              title: "Types of Reactions",
+              description: "Synthesis, decomposition, displacement, combustion",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "balancing-equations",
+              title: "Balancing Equations",
+              description: "Techniques for balancing chemical equations",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "stoichiometry",
+              title: "Stoichiometry",
+              description: "Calculating quantities in chemical reactions",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+
+        case "periodic-table":
+          return [
+            {
+              id: "periodic-trends",
+              title: "Periodic Trends",
+              description: "Atomic radius, ionization energy, electronegativity patterns",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: true,
+            },
+            {
+              id: "groups-families",
+              title: "Groups and Families",
+              description: "Properties of alkali metals, halogens, noble gases etc.",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "periodic-law",
+              title: "Periodic Law",
+              description: "Organization of elements based on atomic number",
+              duration: "20 min",
+              difficulty: "Beginner",
+              completed: false,
+            }
+          ];
+
+        case "gases":
+          return [
+            {
+              id: "gas-properties",
+              title: "Properties of Gases",
+              description: "Basic characteristics and behavior of gases",
+              duration: "20 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "boyles-law",
+              title: "Boyle's Law",
+              description: "Pressure-volume relationship at constant temperature",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "charles-law",
+              title: "Charles's Law",
+              description: "Volume-temperature relationship at constant pressure",
+              duration: "25 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
+
+        case "organic":
+          return [
+            {
+              id: "hydrocarbons",
+              title: "Hydrocarbons",
+              description: "Alkanes, alkenes, alkynes and their properties",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "functional-groups",
+              title: "Functional Groups",
+              description: "Alcohols, carboxylic acids, esters and their characteristics",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "isomerism",
+              title: "Isomerism",
+              description: "Structural and stereoisomers in organic compounds",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+
+        case "acid-base":
+          return [
+            {
+              id: "acid-base-theories",
+              title: "Acid-Base Theories",
+              description: "Arrhenius, Brønsted-Lowry, and Lewis definitions",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: true,
+            },
+            {
+              id: "ph-scale",
+              title: "pH Scale",
+              description: "Measuring acidity and alkalinity",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "buffers",
+              title: "Buffers",
+              description: "Solutions that resist pH changes",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+
+        case "chemical-energy":
+          return [
+            {
+              id: "thermochemistry",
+              title: "Thermochemistry",
+              description: "Heat changes in chemical reactions",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: true,
+            },
+            {
+              id: "enthalpy",
+              title: "Enthalpy",
+              description: "Heat content of chemical systems",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "hess-law",
+              title: "Hess's Law",
+              description: "Calculating enthalpy changes in reactions",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+
+        case "industrial-chemistry":
+          return [
+            {
+              id: "chemical-processes",
+              title: "Chemical Processes",
+              description: "Haber process, Contact process, and other industrial methods",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: true,
+            },
+            {
+              id: "green-chemistry",
+              title: "Green Chemistry",
+              description: "Environmentally sustainable chemical production",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "polymers",
+              title: "Polymers",
+              description: "Synthetic and natural macromolecules",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
+
+        default:
+          return [];
+      }
+    }
+
+
     if (subjectId === "biology") {
       switch (chapterId) {
         case "cell-biology":
@@ -490,7 +778,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "genetics":
           return [
             {
@@ -518,7 +806,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "evolution":
           return [
             {
@@ -546,7 +834,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "ecology":
           return [
             {
@@ -574,7 +862,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "human-physiology":
           return [
             {
@@ -602,7 +890,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "microbiology":
           return [
             {
@@ -630,7 +918,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "plant-biology":
           return [
             {
@@ -658,7 +946,7 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         case "biochemistry":
           return [
             {
@@ -686,590 +974,304 @@ export default function TopicList({ subjectId, chapterId }: TopicListProps) {
               completed: false,
             }
           ];
-    
+
         default:
           return [];
       }
     }
-        if (subjectId === "medical science") {
-          switch (chapterId) {
-            case "human anatomy":
-              return [
-                {
-                  id: "organ-systems",
-                  title: "Major Organ Systems",
-                  description: "Overview of circulatory, nervous, digestive systems",
-                  duration: "40 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "skeletal-muscular",
-                  title: "Skeletal & Muscular Systems",
-                  description: "Bones, joints, and muscle types/function",
-                  duration: "35 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "neuroanatomy",
-                  title: "Basic Neuroanatomy",
-                  description: "Brain structures and nervous system organization",
-                  duration: "45 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
+    if (subjectId === "medical science") {
+      switch (chapterId) {
+        case "human anatomy":
+          return [
+            {
+              id: "organ-systems",
+              title: "Major Organ Systems",
+              description: "Overview of circulatory, nervous, digestive systems",
+              duration: "40 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "skeletal-muscular",
+              title: "Skeletal & Muscular Systems",
+              description: "Bones, joints, and muscle types/function",
+              duration: "35 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "neuroanatomy",
+              title: "Basic Neuroanatomy",
+              description: "Brain structures and nervous system organization",
+              duration: "45 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
 
-            case "physiology":
-              return [
-                {
-                  id: "homeostasis",
-                  title: "Homeostasis",
-                  description: "Maintaining internal balance in the body",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "cardio-physiology",
-                  title: "Cardiovascular Physiology",
-                  description: "Heart function and blood circulation",
-                  duration: "40 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "respiratory-physio",
-                  title: "Respiratory Physiology",
-                  description: "Gas exchange and lung mechanics",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
+        case "physiology":
+          return [
+            {
+              id: "homeostasis",
+              title: "Homeostasis",
+              description: "Maintaining internal balance in the body",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "cardio-physiology",
+              title: "Cardiovascular Physiology",
+              description: "Heart function and blood circulation",
+              duration: "40 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "respiratory-physio",
+              title: "Respiratory Physiology",
+              description: "Gas exchange and lung mechanics",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
 
-            case "pathology":
-              return [
-                {
-                  id: "disease-mechanisms",
-                  title: "Disease Mechanisms",
-                  description: "How diseases develop and progress",
-                  duration: "45 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                },
-                {
-                  id: "inflammation",
-                  title: "Inflammation",
-                  description: "Body's response to injury and infection",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "cancer-biology",
-                  title: "Cancer Biology",
-                  description: "Cellular basis of cancer development",
-                  duration: "50 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
+        case "pathology":
+          return [
+            {
+              id: "disease-mechanisms",
+              title: "Disease Mechanisms",
+              description: "How diseases develop and progress",
+              duration: "45 min",
+              difficulty: "Advanced",
+              completed: false,
+            },
+            {
+              id: "inflammation",
+              title: "Inflammation",
+              description: "Body's response to injury and infection",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "cancer-biology",
+              title: "Cancer Biology",
+              description: "Cellular basis of cancer development",
+              duration: "50 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
 
-            case "pharmacology":
-              return [
-                {
-                  id: "drug-classes",
-                  title: "Major Drug Classes",
-                  description: "Antibiotics, analgesics, antihypertensives etc.",
-                  duration: "40 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "pharmacokinetics",
-                  title: "Pharmacokinetics",
-                  description: "How drugs move through the body (ADME)",
-                  duration: "45 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                },
-                {
-                  id: "drug-interactions",
-                  title: "Drug Interactions",
-                  description: "How medications affect each other",
-                  duration: "35 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
+        case "pharmacology":
+          return [
+            {
+              id: "drug-classes",
+              title: "Major Drug Classes",
+              description: "Antibiotics, analgesics, antihypertensives etc.",
+              duration: "40 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "pharmacokinetics",
+              title: "Pharmacokinetics",
+              description: "How drugs move through the body (ADME)",
+              duration: "45 min",
+              difficulty: "Advanced",
+              completed: false,
+            },
+            {
+              id: "drug-interactions",
+              title: "Drug Interactions",
+              description: "How medications affect each other",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
 
-            case "medical diagnostics":
-              return [
-                {
-                  id: "imaging-techniques",
-                  title: "Medical Imaging",
-                  description: "X-rays, CT, MRI, and ultrasound principles",
-                  duration: "40 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "lab-tests",
-                  title: "Laboratory Tests",
-                  description: "Blood tests, urinalysis, and other common diagnostics",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "clinical-examination",
-                  title: "Clinical Examination",
-                  description: "Physical exam techniques and vital signs",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                }
-              ];
+        case "medical diagnostics":
+          return [
+            {
+              id: "imaging-techniques",
+              title: "Medical Imaging",
+              description: "X-rays, CT, MRI, and ultrasound principles",
+              duration: "40 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "lab-tests",
+              title: "Laboratory Tests",
+              description: "Blood tests, urinalysis, and other common diagnostics",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "clinical-examination",
+              title: "Clinical Examination",
+              description: "Physical exam techniques and vital signs",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: false,
+            }
+          ];
 
-            default:
-              return [];
-          }
-        }
-        if (subjectId === "astronomy") {
-          switch (chapterId) {
-            case "solar system":
-              return [
-                {
-                  id: "planets-overview",
-                  title: "Planetary Overview",
-                  description: "Characteristics of all planets in our solar system",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "earth-moon-system",
-                  title: "Earth-Moon System",
-                  description: "Lunar phases, tides, and orbital mechanics",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "small-bodies",
-                  title: "Small Solar System Bodies",
-                  description: "Asteroids, comets, and Kuiper belt objects",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
+        default:
+          return [];
+      }
+    }
+    if (subjectId === "astronomy") {
+      switch (chapterId) {
+        case "solar system":
+          return [
+            {
+              id: "planets-overview",
+              title: "Planetary Overview",
+              description: "Characteristics of all planets in our solar system",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: true,
+            },
+            {
+              id: "earth-moon-system",
+              title: "Earth-Moon System",
+              description: "Lunar phases, tides, and orbital mechanics",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "small-bodies",
+              title: "Small Solar System Bodies",
+              description: "Asteroids, comets, and Kuiper belt objects",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
 
-            case "stars and galaxies":
-              return [
-                {
-                  id: "stellar-evolution",
-                  title: "Stellar Evolution",
-                  description: "Life cycles of stars from birth to death",
-                  duration: "40 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "galaxy-types",
-                  title: "Galaxy Classification",
-                  description: "Spiral, elliptical, and irregular galaxies",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "milky-way",
-                  title: "Milky Way Structure",
-                  description: "Our home galaxy's composition and features",
-                  duration: "35 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
+        case "stars and galaxies":
+          return [
+            {
+              id: "stellar-evolution",
+              title: "Stellar Evolution",
+              description: "Life cycles of stars from birth to death",
+              duration: "40 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "galaxy-types",
+              title: "Galaxy Classification",
+              description: "Spiral, elliptical, and irregular galaxies",
+              duration: "30 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "milky-way",
+              title: "Milky Way Structure",
+              description: "Our home galaxy's composition and features",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
 
-            case "cosmology":
-              return [
-                {
-                  id: "big-bang",
-                  title: "Big Bang Theory",
-                  description: "Origin and expansion of the universe",
-                  duration: "45 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                },
-                {
-                  id: "dark-matter-energy",
-                  title: "Dark Matter & Energy",
-                  description: "Invisible components shaping the universe",
-                  duration: "40 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                },
-                {
-                  id: "cosmic-microwave",
-                  title: "Cosmic Microwave Background",
-                  description: "Afterglow radiation from the early universe",
-                  duration: "35 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
+        case "cosmology":
+          return [
+            {
+              id: "big-bang",
+              title: "Big Bang Theory",
+              description: "Origin and expansion of the universe",
+              duration: "45 min",
+              difficulty: "Advanced",
+              completed: false,
+            },
+            {
+              id: "dark-matter-energy",
+              title: "Dark Matter & Energy",
+              description: "Invisible components shaping the universe",
+              duration: "40 min",
+              difficulty: "Advanced",
+              completed: false,
+            },
+            {
+              id: "cosmic-microwave",
+              title: "Cosmic Microwave Background",
+              description: "Afterglow radiation from the early universe",
+              duration: "35 min",
+              difficulty: "Advanced",
+              completed: false,
+            }
+          ];
 
-            case "space exploration":
-              return [
-                {
-                  id: "space-missions",
-                  title: "Historic Space Missions",
-                  description: "Apollo, Voyager, Hubble, and other key missions",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "telescopes",
-                  title: "Space Telescopes",
-                  description: "Hubble, James Webb, and their discoveries",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "future-exploration",
-                  title: "Future of Space Travel",
-                  description: "Mars colonization, interstellar probes, and new technologies",
-                  duration: "40 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
+        case "space exploration":
+          return [
+            {
+              id: "space-missions",
+              title: "Historic Space Missions",
+              description: "Apollo, Voyager, Hubble, and other key missions",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "telescopes",
+              title: "Space Telescopes",
+              description: "Hubble, James Webb, and their discoveries",
+              duration: "35 min",
+              difficulty: "Intermediate",
+              completed: false,
+            },
+            {
+              id: "future-exploration",
+              title: "Future of Space Travel",
+              description: "Mars colonization, interstellar probes, and new technologies",
+              duration: "40 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
 
-            case "observational astronomy":
-              return [
-                {
-                  id: "telescope-types",
-                  title: "Telescope Types",
-                  description: "Refractors, reflectors, and radio telescopes",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "star-hopping",
-                  title: "Star Hopping",
-                  description: "Navigation techniques for amateur astronomers",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "astrophotography",
-                  title: "Astrophotography",
-                  description: "Techniques for capturing celestial objects",
-                  duration: "45 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
+        case "observational astronomy":
+          return [
+            {
+              id: "telescope-types",
+              title: "Telescope Types",
+              description: "Refractors, reflectors, and radio telescopes",
+              duration: "25 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "star-hopping",
+              title: "Star Hopping",
+              description: "Navigation techniques for amateur astronomers",
+              duration: "30 min",
+              difficulty: "Beginner",
+              completed: false,
+            },
+            {
+              id: "astrophotography",
+              title: "Astrophotography",
+              description: "Techniques for capturing celestial objects",
+              duration: "45 min",
+              difficulty: "Intermediate",
+              completed: false,
+            }
+          ];
 
-            default:
-              return [];
-          }
-        }
+        default:
+          return [];
+      }
+    }
 
-        if (subjectId === "chemistry") {
-          switch (chapterId) {
-            case "introduction to chemistry":
-              return [
-                {
-                  id: "matter-classification",
-                  title: "Classification of Matter",
-                  description: "Elements, compounds, mixtures and their properties",
-                  duration: "20 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "physical-chemical-changes",
-                  title: "Physical vs Chemical Changes",
-                  description: "Understanding differences between physical and chemical transformations",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "scientific-measurement",
-                  title: "Scientific Measurement",
-                  description: "Units, significant figures, and dimensional analysis",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
-
-            case "atomic":
-              return [
-                {
-                  id: "atomic-models",
-                  title: "Atomic Models",
-                  description: "Evolution from Dalton to quantum mechanical model",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "subatomic-particles",
-                  title: "Subatomic Particles",
-                  description: "Protons, neutrons, electrons and their properties",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "electron-configuration",
-                  title: "Electron Configuration",
-                  description: "Arrangement of electrons in atoms and orbitals",
-                  duration: "35 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
-
-            case "bonding":
-              return [
-                {
-                  id: "ionic-bonding",
-                  title: "Ionic Bonding",
-                  description: "Electron transfer and ionic compound formation",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "covalent-bonding",
-                  title: "Covalent Bonding",
-                  description: "Electron sharing and molecular compounds",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "lewis-structures",
-                  title: "Lewis Structures",
-                  description: "Drawing electron dot diagrams for molecules",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
-
-            case "reaction":
-              return [
-                {
-                  id: "reaction-types",
-                  title: "Types of Reactions",
-                  description: "Synthesis, decomposition, displacement, combustion",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "balancing-equations",
-                  title: "Balancing Equations",
-                  description: "Techniques for balancing chemical equations",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "stoichiometry",
-                  title: "Stoichiometry",
-                  description: "Calculating quantities in chemical reactions",
-                  duration: "40 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
-
-            case "periodic table":
-              return [
-                {
-                  id: "periodic-trends",
-                  title: "Periodic Trends",
-                  description: "Atomic radius, ionization energy, electronegativity patterns",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: true,
-                },
-                {
-                  id: "groups-families",
-                  title: "Groups and Families",
-                  description: "Properties of alkali metals, halogens, noble gases etc.",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "periodic-law",
-                  title: "Periodic Law",
-                  description: "Organization of elements based on atomic number",
-                  duration: "20 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                }
-              ];
-
-            case "gases":
-              return [
-                {
-                  id: "gas-properties",
-                  title: "Properties of Gases",
-                  description: "Basic characteristics and behavior of gases",
-                  duration: "20 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "boyles-law",
-                  title: "Boyle's Law",
-                  description: "Pressure-volume relationship at constant temperature",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "charles-law",
-                  title: "Charles's Law",
-                  description: "Volume-temperature relationship at constant pressure",
-                  duration: "25 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                }
-              ];
-
-            case "organic":
-              return [
-                {
-                  id: "hydrocarbons",
-                  title: "Hydrocarbons",
-                  description: "Alkanes, alkenes, alkynes and their properties",
-                  duration: "30 min",
-                  difficulty: "Beginner",
-                  completed: true,
-                },
-                {
-                  id: "functional-groups",
-                  title: "Functional Groups",
-                  description: "Alcohols, carboxylic acids, esters and their characteristics",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "isomerism",
-                  title: "Isomerism",
-                  description: "Structural and stereoisomers in organic compounds",
-                  duration: "40 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
-
-            case "acid-base":
-              return [
-                {
-                  id: "acid-base-theories",
-                  title: "Acid-Base Theories",
-                  description: "Arrhenius, Brønsted-Lowry, and Lewis definitions",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: true,
-                },
-                {
-                  id: "ph-scale",
-                  title: "pH Scale",
-                  description: "Measuring acidity and alkalinity",
-                  duration: "25 min",
-                  difficulty: "Beginner",
-                  completed: false,
-                },
-                {
-                  id: "buffers",
-                  title: "Buffers",
-                  description: "Solutions that resist pH changes",
-                  duration: "35 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
-
-            case "chemical energy":
-              return [
-                {
-                  id: "thermochemistry",
-                  title: "Thermochemistry",
-                  description: "Heat changes in chemical reactions",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: true,
-                },
-                {
-                  id: "enthalpy",
-                  title: "Enthalpy",
-                  description: "Heat content of chemical systems",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "hess-law",
-                  title: "Hess's Law",
-                  description: "Calculating enthalpy changes in reactions",
-                  duration: "40 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
-
-            case "industrial chemistry":
-              return [
-                {
-                  id: "chemical-processes",
-                  title: "Chemical Processes",
-                  description: "Haber process, Contact process, and other industrial methods",
-                  duration: "35 min",
-                  difficulty: "Intermediate",
-                  completed: true,
-                },
-                {
-                  id: "green-chemistry",
-                  title: "Green Chemistry",
-                  description: "Environmentally sustainable chemical production",
-                  duration: "30 min",
-                  difficulty: "Intermediate",
-                  completed: false,
-                },
-                {
-                  id: "polymers",
-                  title: "Polymers",
-                  description: "Synthetic and natural macromolecules",
-                  duration: "40 min",
-                  difficulty: "Advanced",
-                  completed: false,
-                }
-              ];
-
-            default:
-              return [];
-          }        
-}
 
 
     // Default fallback for demo purposes

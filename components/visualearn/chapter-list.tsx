@@ -145,7 +145,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
       case "chemistry":
         return [
           {
-            id: "introduction to chemistry",
+            id: "introduction-to-chemistry",
             title: "Introduction to Chemistry",
             description: "Fundamental concepts, matter, and the scientific method in chemistry",
             topics: 5,
@@ -153,7 +153,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             progress: 0,
           },
           {
-            id: "atomic",
+            id: "atomic-structure",
             title: "Atomic Structure",
             description: "Study of atoms, subatomic particles, and electron configurations",
             topics: 6,
@@ -177,7 +177,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             progress: 0,
           },
           {
-            id: "periodic table",
+            id: "periodic-table",
             title: "Periodic Table",
             description: "Elements, trends, and properties organized in the periodic table",
             topics: 6,
@@ -209,7 +209,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             progress: 0,
           },
           {
-            id: "chemical energy",
+            id: "chemical-energy",
             title: "Chemical Energy",
             description: "Thermochemistry, enthalpy, entropy, and Gibbs free energy",
             topics: 6,
@@ -217,7 +217,7 @@ export default function ChapterList({ subjectId }: ChapterListProps) {
             progress: 0,
           },
           {
-            id: "industrial chemistry",
+            id: "industrial-chemistry",
             title: "Industrial Chemistry",
             description: "Chemical processes, manufacturing, and applications in industry",
             topics: 7,
