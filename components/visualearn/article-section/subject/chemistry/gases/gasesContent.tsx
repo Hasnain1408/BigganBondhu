@@ -5,6 +5,7 @@ import BoylesLawIndex from "./boyles law/boylesLawIndex"
 import CharlesLawIndex from "./charles law/charlesLawIndex"
 import PropertiesOfGasesIndex from "./gas properties/propertiesOfGasesIndex"
 
+
 interface GasesContentProps {
   topic: {
     id: string

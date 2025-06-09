@@ -3,8 +3,10 @@
 import AcidsAndBasesContent from "./acid base/acid-baseContent"
 import AtomicStructureContent from "./atomic structure/atomicStructureContent"
 import ChemicalBondingContent from "./chemical bonding/chemicalBondingContent"
+import ChemicalEnergyContent from "./chemical energy/chemicalEnergyContent"
 import ChemicalReactionsContent from "./chemical reaction/chemicalReactionsContent"
 import GasesContent from "./gases/gasesContent"
+import IndustrialChemistryContent from "./industrial chemistry/industrialChemistryContent"
 import OrganicChemistryContent from "./organic chemistry/organicChemistryContent"
 import PeriodicTableContent from "./periodic table/periodicTableContent"
 
@@ -48,15 +50,13 @@ export default function ChemistryContent({ chapter, topic }: ChemistryContentPro
         ) : null}
         {chapter === "acid-base" ? (
             <AcidsAndBasesContent topic={topic} />
-        ) : null} 
-
-        {/*      
+        ) : null}    
         {chapter === "chemical-energy" ? (
-            <WaveContent topic={topic} />
+            <ChemicalEnergyContent topic={topic} />
         ) : null} 
         {chapter === "industrial-chemistry" ? (
-            <WaveContent topic={topic} />
-        ) : null}   */}
+            <IndustrialChemistryContent topic={topic} />
+        ) : null}  
 
     </div>
   )
