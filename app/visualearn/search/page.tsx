@@ -1,39 +1,32 @@
-import TopicContent from "@/components/visualearn/topic-content";
-import TopicNavigation from "@/components/visualearn/topic-navigation";
 import { Suspense } from "react"
 
 
-
+const topics = [
+  { id: 1, title: "Motion", description: "Physics topic about movement." },
+  { id: 2, title: "Photosynthesis", description: "Biology topic about plants." },
+  // ...more topics
+]
 
 
 function SearchResults({ query }: { query: string }) {
-  const results = TopicContent subject={subject} chapter={chapter} topic={topicData};
-  
+  const results = topics.filter(topic =>
+    topic.title.toLowerCase().includes(query.toLowerCase())
+  )
 
-  // if (!results.length) {
-  //   return <p>No results found for "{query}".</p>
-  // }
-
-  // TODO: Replace these with actual logic to get the correct subject, chapter, and topicData based on the search query
-  const subject = "chemistry";
-  const chapter = "reaction";
-  const topicData = {
-    id: "",
-    title: "",
-    description: "",
-    content: "",
-    hasSimulation: false,
-    hasQuiz: false,
-    nextTopic: null,
-    prevTopic: null,
-  };
+  if (!results.length) {
+    return <p>No results found for "{query}".</p>
+  }
 
   return (
-      <div className="container py-8">
-        <TopicNavigation subject={subject} chapter={chapter} topic={topicData} />
-        <TopicContent subject={subject} chapter={chapter} topic={topicData} />
-      </div>
-    );
+    <ul>
+      {results.map(topic => (
+        <li key={topic.id}>
+          <h3>{topic.title}</h3>
+          <p>{topic.description}</p>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 export default function SearchPage({ searchParams }: { searchParams: { [key: string]: string } }) {
