@@ -1,7 +1,6 @@
 "use client"
 
 import PhysicsContent from "./article-section/subject/physics/physicsContent"
-// import ChemistryContent from "./article-section/subject/chemistry/chemistryContent"
 import BiologyContent from "./article-section/subject/biology/biologyContent"
 import ChemistryContent from "./article-section/subject/chemistry/chemistryContent"
 // import MathContent from "./article-section/subject/math/mathContent"
@@ -32,19 +31,17 @@ export default function TopicContent({ subject, chapter, topic }: TopicContentPr
       {subject === "chemistry" ? (
         <ChemistryContent chapter={chapter} topic={topic} />
       ) : null}
-      {/* {subject === "chemistry" ? (
-        <ChemistryContent chapter={chapter} topic={topic} />
-      ) : null}
+      
 
      
 
-      {subject === "math" ? (
+      {/* {subject === "math" ? (
         <MathContent chapter={chapter} topic={topic} />
       ) : null}
 
       {subject === "astronomy" ? (
         <AstronomyContent chapter={chapter} topic={topic} />
-      ) : null} */}
+      ) : null} */} */
     </div>
   )
 }

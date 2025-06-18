@@ -28,7 +28,7 @@ export default function ChemicalEnergyContent({ topic }: ChemicalEnergyContentPr
         <EnthalpyIndex />
       ) : null}
 
-      {topic.id === "hesss-law" ? (
+      {topic.id === "hess-law" ? (
         <HessLawIndex />
       ) : null}
     </div>

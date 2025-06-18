@@ -40,7 +40,7 @@ const quizData: QuizContent = {
         { en: "Combination", bn: "সংযোজন" },
         { en: "Decomposition", bn: "পচন" },
         { en: "Single Replacement", bn: "একক স্থানান্তর" },
-        { en: "Double Replacement", bn: "দ্বৈত স্�thabantor}
+        { en: "Double Replacement", bn: "দ্বৈত স্থানান্তর"}
       ],
 
       answer: 2,

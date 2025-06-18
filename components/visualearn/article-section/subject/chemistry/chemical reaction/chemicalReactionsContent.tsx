@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import TypesOfReactionsIndex from "./reaction types/typesOfReactionsContent"
+import TypesOfReactionsIndex from "./reaction types/typesOfReactionsIndex"
 import BalancingEquationsIndex from "./balancing equations/balancingEquationsIndex"
 import StoichiometryIndex from "./stoichiometry/stoichiometryIndex"
 
@@ -19,7 +19,7 @@ interface ChemicalReactionsContentProps {
 export default function ChemicalReactionsContent({ topic }: ChemicalReactionsContentProps) {
   return (
     <div className="space-y-8">
-      {topic.id === "types-of-reactions" ? (
+      {topic.id === "reaction-types" ? (
         <TypesOfReactionsIndex />
       ) : null}
 

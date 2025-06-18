@@ -7,6 +7,7 @@ import ChemicalEnergyContent from "./chemical energy/chemicalEnergyContent"
 import ChemicalReactionsContent from "./chemical reaction/chemicalReactionsContent"
 import GasesContent from "./gases/gasesContent"
 import IndustrialChemistryContent from "./industrial chemistry/industrialChemistryContent"
+import IntroChemistryContent from "./introduction to chemistry/introductionChemistryContent"
 import OrganicChemistryContent from "./organic chemistry/organicChemistryContent"
 import PeriodicTableContent from "./periodic table/periodicTableContent"
 
@@ -27,9 +28,9 @@ interface ChemistryContentProps {
 export default function ChemistryContent({ chapter, topic }: ChemistryContentProps) {
   return (
     <div className="space-y-8">
-        {/* {chapter === "introduction-to-chemistry" ? (
-            <IntroductionContent topic={topic} />
-        ) : null} */}
+        {chapter === "introduction-to-chemistry" ? (
+            <IntroChemistryContent topic={topic} />
+        ) : null}
         {chapter === "atomic-structure" ? (
             <AtomicStructureContent topic={topic} />
         ) : null}
