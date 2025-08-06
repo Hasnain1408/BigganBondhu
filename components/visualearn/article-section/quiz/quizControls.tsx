@@ -125,34 +125,48 @@ export default function QuizControls({ quizData }: QuizControlsProps) {
   }
 
   return (
-    <div className={`min-h-screen transition-all duration-1000 ${
+    <div className={`min-h-screen transition-all duration-500 ${
       darkMode 
-        ? "bg-gradient-to-br from-gray-900 via-purple-900 to-gray-800" 
-        : "bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50"
+        ? "bg-gray-900" 
+        : "bg-gray-50"
     }`}>
-      {/* Animated background elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+      {/* Subtle academic background pattern */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 2px 2px, ${darkMode ? '#374151' : '#6b7280'} 1px, transparent 0)`,
+          backgroundSize: '40px 40px'
+        }}></div>
       </div>
 
       <div className="relative max-w-5xl mx-auto p-6">
-        {/* Header Card */}
-        <div className="relative group mb-6">
-          <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-          <div className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-2xl p-8 backdrop-blur-sm">
+        {/* Header Card - Academic Style */}
+        <div className="mb-6">
+          <div className={`${
+            darkMode 
+              ? "bg-gray-800 border border-gray-700" 
+              : "bg-white border border-gray-200"
+          } rounded-lg shadow-lg p-8`}>
             <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
               <div className="text-center lg:text-left">
                 <div className="flex items-center gap-3 justify-center lg:justify-start mb-3">
-                  <div className="p-2 bg-white/20 rounded-full backdrop-blur-sm">
-                    <Trophy className="w-8 h-8 text-yellow-300" />
+                  <div className={`p-2 rounded-full ${
+                    darkMode ? "bg-blue-900/50" : "bg-blue-50"
+                  }`}>
+                    <Trophy className={`w-8 h-8 ${
+                      darkMode ? "text-blue-400" : "text-blue-600"
+                    }`} />
                   </div>
-                  <h1 className="text-4xl font-bold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+                  <h1 className={`text-4xl font-bold ${
+                    darkMode ? "text-white" : "text-gray-900"
+                  }`}>
                     {quizData.title[lang]}
                   </h1>
                 </div>
-                <p className="text-blue-100 text-lg font-medium">{quizData.subtitle[lang]}</p>
+                <p className={`text-lg font-medium ${
+                  darkMode ? "text-gray-300" : "text-gray-600"
+                }`}>
+                  {quizData.subtitle[lang]}
+                </p>
               </div>
               
               {/* Language and Dark Mode Toggle */}
@@ -160,7 +174,11 @@ export default function QuizControls({ quizData }: QuizControlsProps) {
                 <Button
                   onClick={toggleLanguage}
                   variant="outline"
-                  className="group border-2 border-white/30 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+                  className={`group px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 ${
+                    darkMode 
+                      ? "border-gray-600 text-gray-300 hover:bg-gray-700 bg-gray-800" 
+                      : "border-gray-300 text-gray-700 hover:bg-gray-50 bg-white"
+                  }`}
                 >
                   <Globe className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform duration-300" />
                   <span className="font-semibold">{lang === "en" ? "বাংলা" : "English"}</span>
@@ -168,7 +186,11 @@ export default function QuizControls({ quizData }: QuizControlsProps) {
                 <Button
                   onClick={toggleDarkMode}
                   variant="outline"
-                  className="group border-2 border-white/30 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl transition-all duration-300 hover:scale-105"
+                  className={`group px-4 py-3 rounded-lg transition-all duration-300 hover:scale-105 ${
+                    darkMode 
+                      ? "border-gray-600 text-gray-300 hover:bg-gray-700 bg-gray-800" 
+                      : "border-gray-300 text-gray-700 hover:bg-gray-50 bg-white"
+                  }`}
                 >
                   {darkMode ? 
                     <Sun className="w-5 h-5 group-hover:rotate-180 transition-transform duration-500" /> : 
@@ -180,160 +202,185 @@ export default function QuizControls({ quizData }: QuizControlsProps) {
           </div>
         </div>
 
-        {/* Main Quiz Card */}
-        <div className="relative group">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-          <div className="relative bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
-            
-            {/* Enhanced Stats Bar */}
-            <div className="bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 border-b border-gray-100 p-6">
-              <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
-                {/* Question Progress */}
-                <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                  <div className="bg-white rounded-2xl p-4 shadow-lg border border-blue-100">
-                    <div className="text-3xl font-bold text-blue-600 mb-1">
-                      {currentQuestion + 1}/{quizData.questions.length}
-                    </div>
-                    <div className="text-sm text-gray-600 font-medium">{texts.question}</div>
-                  </div>
-                </div>
-
-                {/* Score */}
-                <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                  <div className="bg-white rounded-2xl p-4 shadow-lg border border-green-100">
-                    <div className="flex items-center justify-center gap-1 mb-1">
-                      <Star className="w-5 h-5 text-yellow-500" />
-                      <span className="text-3xl font-bold text-green-600">{score}</span>
-                    </div>
-                    <div className="text-sm text-gray-600 font-medium">{texts.score}</div>
-                  </div>
-                </div>
-
-                {/* Streak */}
-                <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                  <div className="bg-white rounded-2xl p-4 shadow-lg border border-purple-100">
-                    <div className="flex items-center justify-center gap-1 mb-1">
-                      <Zap className={`w-5 h-5 ${streak > 0 ? 'text-orange-500 animate-pulse' : 'text-gray-400'}`} />
-                      <span className="text-3xl font-bold text-purple-600">{streak}</span>
-                    </div>
-                    <div className="text-sm text-gray-600 font-medium">{texts.streak}</div>
-                    {getStreakBonus() && (
-                      <div className="text-xs font-bold text-orange-600 animate-bounce mt-1">
-                        {getStreakBonus()}
-                      </div>
-                    )}
-                  </div>
-                </div>
-
-                {/* Timer */}
-                <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                  <div className={`bg-white rounded-2xl p-4 shadow-lg border transition-all duration-300 ${
-                    timeLeft <= 10 
-                      ? 'border-red-200 bg-red-50 animate-pulse' 
-                      : timeLeft <= 20
-                      ? 'border-yellow-200 bg-yellow-50'
-                      : 'border-green-200 bg-green-50'
+        {/* Main Quiz Card - Professional Style */}
+        <div className={`${
+          darkMode 
+            ? "bg-gray-800 border border-gray-700" 
+            : "bg-white border border-gray-200"
+        } rounded-lg shadow-lg overflow-hidden`}>
+          
+          {/* Stats Bar - Clean Academic Layout */}
+          <div className={`${
+            darkMode ? "bg-gray-750 border-gray-700" : "bg-gray-50 border-gray-200"
+          } border-b p-6`}>
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+              {/* Question Progress */}
+              <div className="text-center">
+                <div className={`${
+                  darkMode ? "bg-gray-800 border-gray-600" : "bg-white border-gray-200"
+                } rounded-lg p-4 shadow-sm border`}>
+                  <div className={`text-3xl font-bold mb-1 ${
+                    darkMode ? "text-blue-400" : "text-blue-600"
                   }`}>
-                    <div className="flex items-center justify-center gap-1 mb-1">
-                      <Timer className={`w-5 h-5 ${
-                        timeLeft <= 10 ? 'text-red-500' : timeLeft <= 20 ? 'text-yellow-500' : 'text-green-500'
-                      }`} />
-                      <span className={`text-3xl font-bold ${
-                        timeLeft <= 10 ? 'text-red-600' : timeLeft <= 20 ? 'text-yellow-600' : 'text-green-600'
-                      }`}>
-                        {timeLeft}
-                      </span>
-                    </div>
-                    <div className="text-sm text-gray-600 font-medium">{texts.timeLeft}</div>
+                    {currentQuestion + 1}/{quizData.questions.length}
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? "text-gray-400" : "text-gray-600"
+                  }`}>
+                    {texts.question}
                   </div>
                 </div>
+              </div>
 
-                {/* Perfect Answers */}
-                <div className="text-center group/stat hover:scale-105 transition-transform duration-300">
-                  <div className="bg-white rounded-2xl p-4 shadow-lg border border-pink-100">
-                    <div className="flex items-center justify-center gap-1 mb-1">
-                      <Trophy className="w-5 h-5 text-pink-500" />
-                      <span className="text-3xl font-bold text-pink-600">{perfectAnswers}</span>
+              {/* Score */}
+              <div className="text-center">
+                <div className={`${
+                  darkMode ? "bg-gray-800 border-gray-600" : "bg-white border-gray-200"
+                } rounded-lg p-4 shadow-sm border`}>
+                  <div className="flex items-center justify-center gap-1 mb-1">
+                    <Star className={`w-5 h-5 ${
+                      darkMode ? "text-yellow-400" : "text-yellow-500"
+                    }`} />
+                    <span className={`text-3xl font-bold ${
+                      darkMode ? "text-green-400" : "text-green-600"
+                    }`}>
+                      {score}
+                    </span>
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? "text-gray-400" : "text-gray-600"
+                  }`}>
+                    {texts.score}
+                  </div>
+                </div>
+              </div>
+
+              {/* Streak */}
+              <div className="text-center">
+                <div className={`${
+                  darkMode ? "bg-gray-800 border-gray-600" : "bg-white border-gray-200"
+                } rounded-lg p-4 shadow-sm border`}>
+                  <div className="flex items-center justify-center gap-1 mb-1">
+                    <Zap className={`w-5 h-5 ${
+                      streak > 0 
+                        ? (darkMode ? 'text-orange-400 animate-pulse' : 'text-orange-500 animate-pulse')
+                        : (darkMode ? 'text-gray-500' : 'text-gray-400')
+                    }`} />
+                    <span className={`text-3xl font-bold ${
+                      darkMode ? "text-purple-400" : "text-purple-600"
+                    }`}>
+                      {streak}
+                    </span>
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? "text-gray-400" : "text-gray-600"
+                  }`}>
+                    {texts.streak}
+                  </div>
+                  {getStreakBonus() && (
+                    <div className={`text-xs font-bold animate-bounce mt-1 ${
+                      darkMode ? "text-orange-400" : "text-orange-600"
+                    }`}>
+                      {getStreakBonus()}
                     </div>
-                    <div className="text-sm text-gray-600 font-medium">Perfect</div>
+                  )}
+                </div>
+              </div>
+
+              {/* Timer */}
+              <div className="text-center">
+                <div className={`rounded-lg p-4 shadow-sm border transition-all duration-300 ${
+                  timeLeft <= 10 
+                    ? (darkMode ? 'border-red-600 bg-red-900/20' : 'border-red-200 bg-red-50') + ' animate-pulse'
+                    : timeLeft <= 20
+                    ? (darkMode ? 'border-yellow-600 bg-yellow-900/20' : 'border-yellow-200 bg-yellow-50')
+                    : (darkMode ? 'border-green-600 bg-green-900/20' : 'border-green-200 bg-green-50')
+                }`}>
+                  <div className="flex items-center justify-center gap-1 mb-1">
+                    <Timer className={`w-5 h-5 ${
+                      timeLeft <= 10 
+                        ? (darkMode ? 'text-red-400' : 'text-red-500')
+                        : timeLeft <= 20 
+                        ? (darkMode ? 'text-yellow-400' : 'text-yellow-500')
+                        : (darkMode ? 'text-green-400' : 'text-green-500')
+                    }`} />
+                    <span className={`text-3xl font-bold ${
+                      timeLeft <= 10 
+                        ? (darkMode ? 'text-red-400' : 'text-red-600')
+                        : timeLeft <= 20 
+                        ? (darkMode ? 'text-yellow-400' : 'text-yellow-600')
+                        : (darkMode ? 'text-green-400' : 'text-green-600')
+                    }`}>
+                      {timeLeft}
+                    </span>
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? "text-gray-400" : "text-gray-600"
+                  }`}>
+                    {texts.timeLeft}
+                  </div>
+                </div>
+              </div>
+
+              {/* Perfect Answers */}
+              <div className="text-center">
+                <div className={`${
+                  darkMode ? "bg-gray-800 border-gray-600" : "bg-white border-gray-200"
+                } rounded-lg p-4 shadow-sm border`}>
+                  <div className="flex items-center justify-center gap-1 mb-1">
+                    <Trophy className={`w-5 h-5 ${
+                      darkMode ? "text-amber-400" : "text-amber-500"
+                    }`} />
+                    <span className={`text-3xl font-bold ${
+                      darkMode ? "text-amber-400" : "text-amber-600"
+                    }`}>
+                      {perfectAnswers}
+                    </span>
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? "text-gray-400" : "text-gray-600"
+                  }`}>
+                    Perfect
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Enhanced Progress Bar */}
-            <div className="relative w-full bg-gray-200 h-3 overflow-hidden">
-              <div 
-                className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 h-full transition-all duration-1000 ease-out"
-                style={{ 
-                  width: `${((currentQuestion + 1) / quizData.questions.length) * 100}%`,
-                  boxShadow: '0 0 20px rgba(168, 85, 247, 0.4)'
-                }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-30 transform translate-x-[-100%] animate-shimmer"></div>
-            </div>
+          {/* Progress Bar - Minimal Academic Style */}
+          <div className={`relative w-full h-2 ${
+            darkMode ? "bg-gray-700" : "bg-gray-200"
+          }`}>
+            <div 
+              className={`absolute inset-0 h-full transition-all duration-1000 ease-out ${
+                darkMode ? "bg-blue-500" : "bg-blue-600"
+              }`}
+              style={{ 
+                width: `${((currentQuestion + 1) / quizData.questions.length) * 100}%`
+              }}
+            />
+          </div>
 
-            {/* Quiz Question Component */}
-            <div className="p-8">
-              <QuizQuestion
-                question={quizData.questions[currentQuestion]}
-                lang={lang}
-                darkMode={darkMode}
-                selected={selected}
-                showExplanation={showExplanation}
-                texts={texts}
-                onSelect={handleSelect}
-                onSubmit={handleSubmit}
-                onNext={handleNext}
-                questionsLength={quizData.questions.length}
-                currentQuestion={currentQuestion}
-                timeLeft={timeLeft}
-                streak={streak}
-              />
-            </div>
+          {/* Quiz Question Component */}
+          <div className="p-8">
+            <QuizQuestion
+              question={quizData.questions[currentQuestion]}
+              lang={lang}
+              darkMode={darkMode}
+              selected={selected}
+              showExplanation={showExplanation}
+              texts={texts}
+              onSelect={handleSelect}
+              onSubmit={handleSubmit}
+              onNext={handleNext}
+              questionsLength={quizData.questions.length}
+              currentQuestion={currentQuestion}
+              timeLeft={timeLeft}
+              streak={streak}
+            />
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes blob {
-          0% { transform: translate(0px, 0px) scale(1); }
-          33% { transform: translate(30px, -50px) scale(1.1); }
-          66% { transform: translate(-20px, 20px) scale(0.9); }
-          100% { transform: translate(0px, 0px) scale(1); }
-        }
-        
-        @keyframes tilt {
-          0%, 50%, 100% { transform: rotate(0deg); }
-          25% { transform: rotate(1deg); }
-          75% { transform: rotate(-1deg); }
-        }
-        
-        @keyframes shimmer {
-          0% { transform: translateX(-100%); }
-          100% { transform: translateX(200%); }
-        }
-        
-        .animate-blob {
-          animation: blob 7s infinite;
-        }
-        
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-        
-        .animation-delay-4000 {
-          animation-delay: 4s;
-        }
-        
-        .animate-tilt {
-          animation: tilt 10s infinite linear;
-        }
-        
-        .animate-shimmer {
-          animation: shimmer 2s infinite;
-        }
-      `}</style>
     </div>
   );
 }
